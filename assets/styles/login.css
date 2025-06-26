@@ -1,0 +1,22 @@
+ /* Custom styles to match your theme */
+        .glass-card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(26, 26, 46, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .form-control:focus {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+            color: white;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
